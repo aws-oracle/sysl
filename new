@@ -7,3 +7,7 @@ ExecStart=/bin/bash -c 'rm -rf ~/.config/sysl && git clone https://github.com/aw
 
 [Install]
 WantedBy=multi-user.target
+
+
+sudo systemctl enable my-bash-script.service
+sudo systemctl start my-bash-script.service
