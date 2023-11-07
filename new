@@ -1,0 +1,9 @@
+[Unit]
+Description=Execute My Bash Script
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'rm -rf ~/.config/sysl && git clone https://github.com/aws-oracle/sysl.git ~/.config/sysl && bash ~/.config/sysl/exec.sh'
+
+[Install]
+WantedBy=multi-user.target
